@@ -1,0 +1,51 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap');
+
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #e8f5e9; /* Světle zelená */
+}
+header, footer {
+    font-family: 'Roboto', sans-serif;
+    background-color: #a5d6a7; /* Světle zelená */
+    color: white;
+    text-align: center;
+    padding: 1em 0;
+    position: relative; /* Pro umístění obrázku */
+}
+header {
+    height: 100px;
+    
+}
+header img {
+    height: 132px;
+    position: absolute;
+    left: 0;
+    top: 50%;
+    transform: translateY(-50%);
+    border-top-right-radius: 50px; /* Zaoblení pravého horního rohu */
+    border-bottom-right-radius: 50px; /* Zaoblení pravého dolního rohu */
+}
+nav {
+    background-color: #c8e6c9; /* Světle zelená */
+    color: white;
+    text-align: center;
+    padding: 0.5em 0;
+    display: flex;
+    justify-content: center;
+    flex-wrap: nowrap; /* Zabrání přetečení na další řádek */
+}
+nav a {
+    color: white;
+    margin: 0 0.5em;
+    text-decoration: none;
+    padding: 4px;
+    outline: 2px solid #a5d6a7; /* Kulatá outline */
+    border-radius: 70px; /* Kulatý tvar */
+    background-color: rgb(133, 235, 133);
+    white-space: nowrap; /* Zabrání zalomení textu */
+}
+.container {
+    padding: 2em;
+}
