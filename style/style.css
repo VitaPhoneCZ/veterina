@@ -1,0 +1,12 @@
+a {
+    font-size: 30px;
+    /* Nastaví velikost písma */
+    color: blue;
+    /* Nastaví barvu textu */
+    display: flex;
+    /* Flexibilní uspořádání */
+    justify-content: right;
+    /* Horizontální zarovnání na střed */
+    text-align: right;
+    /* Zarovnání na střed */
+  }
