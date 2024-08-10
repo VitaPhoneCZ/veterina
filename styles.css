@@ -16,7 +16,11 @@ header, footer {
 }
 header {
     height: 100px;
-    
+}
+header h1 {
+    position: relative;
+    z-index: 1; /* Zajistí, že h1 bude před obrázkem */
+    text-shadow: 2px 2px 5px #000000; /* Jednoduchý stín kolem textu */
 }
 header img {
     height: 132px;
@@ -26,6 +30,7 @@ header img {
     transform: translateY(-50%);
     border-top-right-radius: 50px; /* Zaoblení pravého horního rohu */
     border-bottom-right-radius: 50px; /* Zaoblení pravého dolního rohu */
+    z-index: 0; /* Zajistí, že obrázek bude za h1 */
 }
 nav {
     background-color: #c8e6c9; /* Světle zelená */
@@ -45,6 +50,10 @@ nav a {
     border-radius: 70px; /* Kulatý tvar */
     background-color: rgb(133, 235, 133);
     white-space: nowrap; /* Zabrání zalomení textu */
+    text-shadow: 1px 1px 3px #000000; /* Jednoduchý stín kolem textu */
+}
+.vybrano {
+    background-color: rgb(85, 190, 71);
 }
 .container {
     padding: 2em;
