@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Multiple Expandable Sections with Sliding Text</title>
+    <style>
+        .expandable {
+            cursor: pointer;
+            color: rgb(165, 165, 255);
+            text-decoration: underline;
+            margin-bottom: 10px;
+        }
+        .content {
+            max-height: 0;
+            overflow: hidden;
+            transition: max-height 0.5s ease-out;
+            margin-bottom: 20px;
+        }
+        .content p {
+            transform: translateX(-100%);
+            opacity: 0;
+            transition: transform 0.5s ease-out, opacity 0.5s ease-out;
+        }
+        .content.show {
+            max-height: 200px; /* Adjust this value based on your content's height */
+        }
+        .content.show p {
+            transform: translateX(0);
+            opacity: 1;
+        }
+    </style>
+</head>
+<body>
+    <p class="expandable">Click here to learn more about the first subject.</p>
+    <div class="content">
+        <p>This is the expanded content that provides more information about the first subject.</p>
+    </div>
+
+    <p class="expandable">Click here to learn more about the second subject.</p>
+    <div class="content">
+        <p>This is the expanded content that provides more information about the second subject.</p>
+    </div>
+
+    <p class="expandable">Click here to learn more about the third subject.</p>
+    <div class="content">
+        <p>This is the expanded content that provides more information about the third subject.</p>
+    </div>
+
+    <script>
+        document.querySelectorAll('.expandable').forEach(function(expandable) {
+            expandable.addEventListener('click', function() {
+                var content = this.nextElementSibling;
+                content.classList.toggle('show');
+            });
+        });
+    </script>
+</body>
+</html>
