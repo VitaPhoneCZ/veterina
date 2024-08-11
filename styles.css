@@ -64,17 +64,16 @@ nav a {
     padding: 5px;
     padding-left: 10px;
     padding-right: 10px;
+    margin-top: 10px;
 }
-.tabulka1 h3,h2,p{
+.tabulka1 h3,.tabulka1 h2,.tabulka1 p{
     background-color: #affdb5;
     padding: 5px;
     padding-left: 10px;
 }
------------
+/*----------------------*/
 .expandable {
     cursor: pointer;
-    color: blue;
-    text-decoration: underline;
 }
 .content {
     max-height: 0;
@@ -93,16 +92,25 @@ nav a {
     transform: translateX(0);
     opacity: 1;
 }
---------------
+/*----------------------*/
 .tabulka2 {
+    margin-top: 20px;
+    background-color: #cdffd1;
     max-width: 500px;
+    display: block;
+    padding: 5px;
+    padding-left: 10px;
+    padding-right: 10px;
 }
 .tabulka2 img{
     max-width: 500px;
     width: 100%;
 }
 .tabulka2 h3{
-    display: flex;
-    position: relative;
     text-align: center;
+}
+.tabulka2 h3,.tabulka2 h2,.tabulka2 p{
+    background-color: #affdb5;
+    padding: 5px;
+    padding-left: 10px;
 }
