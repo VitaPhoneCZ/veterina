@@ -71,28 +71,6 @@ nav a {
     padding: 5px;
     padding-left: 10px;
 }
-/*----------------------*/
-.expandable {
-    cursor: pointer;
-}
-.content {
-    max-height: 0;
-    overflow: hidden;
-    transition: max-height 0.5s ease-out;
-}
-.content p {
-    transform: translateY(-100%);
-    opacity: 0;
-    transition: transform 0.5s ease-out, opacity 0.5s ease-out;
-}
-.content.show {
-    max-height: 500px; /* Adjust this value based on your content's height */
-}
-.content.show p {
-    transform: translateX(0);
-    opacity: 1;
-}
-/*----------------------*/
 .tabulka2 {
     margin-top: 20px;
     background-color: #cdffd1;
@@ -114,3 +92,48 @@ nav a {
     padding: 5px;
     padding-left: 10px;
 }
+/*-----------otevirani-----------*/
+.expandable {
+    cursor: pointer;
+}
+.content {
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.5s ease-out;
+}
+.content p {
+    transform: translateY(-100%);
+    opacity: 0;
+    transition: transform 0.5s ease-out, opacity 0.5s ease-out;
+}
+.content.show {
+    max-height: 500px; /* Adjust this value based on your content's height */
+}
+.content.show p {
+    transform: translateX(0);
+    opacity: 1;
+}
+/*-----------šipka-----------*/
+
+.expandable {
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+}
+
+.expandable .arrow {
+    transition: transform 0.3s;
+    margin-right: 3px;
+}
+
+.expandable.active .arrow {
+    transform: rotate(90deg);
+}
+
+
+
+.content.show {
+    max-height: 200px; /* Adjust this value based on your content's height */
+    transition: max-height 0.5s ease-in;
+}
+/*-----------konec-----------*/
