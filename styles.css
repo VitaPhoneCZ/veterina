@@ -4,7 +4,7 @@ body {
     font-family: Arial, sans-serif;
     margin: 0;
     padding: 0;
-    background-color: #e8f5e9; /* Světle zelená */
+    background-color: #ffffff; /* Světle zelená */
 }
 header, footer {
     font-family: 'Roboto', sans-serif;
@@ -60,20 +60,25 @@ nav a {
 }
 .tabulka1 {
     max-width: 500px;
-    background-color: #cdffd1;
+    background-color: #ffffff;
     padding: 5px;
     padding-left: 10px;
     padding-right: 10px;
     margin-top: 10px;
 }
 .tabulka1 h3,.tabulka1 h2,.tabulka1 p{
-    background-color: #affdb5;
+    background-color: #ffffff;
     padding: 5px;
     padding-left: 10px;
 }
+.h1,h2{
+    color: rgb(123, 255, 123);
+    text-shadow: 1px 1px 2px black;
+    justify-content: center;
+}
 .tabulka2 {
     margin-top: 20px;
-    background-color: #cdffd1;
+    background-color: #ffffff;
     max-width: 500px;
     display: block;
     padding: 5px;
@@ -88,7 +93,7 @@ nav a {
     text-align: center;
 }
 .tabulka2 h3,.tabulka2 h2,.tabulka2 p{
-    background-color: #affdb5;
+    background-color: #ffffff;
     padding: 5px;
     padding-left: 10px;
 }
@@ -137,3 +142,7 @@ nav a {
     transition: max-height 0.5s ease-in;
 }
 /*-----------konec-----------*/
+.eutanasie{
+    text-shadow: 0px 0px 0px;
+    color: black;
+}
