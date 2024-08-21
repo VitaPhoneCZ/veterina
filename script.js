@@ -5,3 +5,6 @@ document.querySelectorAll('.expandable').forEach(function(expandable) {
         this.classList.toggle('active');
     });
 });
+function scrollToEuthanasia() {
+    document.getElementById('euthanasia').scrollIntoView({ behavior: 'smooth' });
+}
