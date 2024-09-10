@@ -8,3 +8,6 @@ document.querySelectorAll('.expandable').forEach(function(expandable) {
 function scrollToEuthanasia() {
     document.getElementById('euthanasia').scrollIntoView({ behavior: 'smooth' });
 }
+function scrollToPrevence() {
+    document.getElementById('prevence').scrollIntoView({ behavior: 'smooth' });
+}

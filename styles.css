@@ -150,7 +150,8 @@ h4{
     padding: 5px;
     padding-left: 10px;
 }
-.Euthanasia{
-    text-decoration: underline;
-    color: lightgreen
+.preklik{
+    text-decoration: dotted underline;
+    color: rgb(86, 250, 86);
+    text-shadow: 1px 1px 3px black;
 }
