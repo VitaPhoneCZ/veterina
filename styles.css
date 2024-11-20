@@ -37,7 +37,7 @@ header h3 {
 .obrazek {
     margin-top: 0px; /* Restore spacing below the header */
     height: 400px;
-    background: url('/zuzka+pes2.jpg') center/cover no-repeat;
+    background: url('zuzka+pes2.jpg') center/cover no-repeat;
 }
 
 /* Navigation */
