@@ -1,195 +1,183 @@
 @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap');
 
+/* General Body Styles */
 body {
-    font-family: Arial, sans-serif;
+    font-family: 'Roboto', sans-serif;
     margin: 0;
     padding: 0;
-    background-color: #ffffff; /* Světle zelená */
+    background-color: #f4f8f5; /* Light green background */
+    color: #333;
 }
+
+/* Header */
 header, footer {
-    font-family: 'Roboto', sans-serif;
-    background-color: #a5d6a7; /* Světle zelená */
+    background-color: #388e3c; /* Dark green */
     color: white;
     text-align: center;
-    padding: 1em 0;
-    position: relative; /* Pro umístění obrázku */
-}
-header {
-    position: fixed;
+    padding: 1rem 0;
+    position: sticky;
     top: 0;
-    left: 0;
-    width: 100%;
-    z-index: 1000; /* Optional: Ensures it stays above other elements */
-  }
-  
-.obrazek {
-    margin-top: 110px;
-    height: 400px;
-    background-image: url(/zuzka+pes2.jpg);
-    background-position: center center;
-    background-repeat: no-repeat;
-    background-size: cover;
+    z-index: 1000;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Subtle shadow */
 }
+
 header h1 {
-    position: relative;
-    z-index: 1; /* Zajistí, že h1 bude před obrázkem */
-    text-shadow: 2px 2px 5px #000000; /* Jednoduchý stín kolem textu */
-    font-size: 2em;
-    margin-top: 0px;
-    margin-bottom: 0px;
+    font-size: 2.5rem;
+    margin: 0;
 }
+
 header h3 {
-    position: relative;
-    z-index: 1; /* Zajistí, že h1 bude před obrázkem */
-    text-shadow: 2px 2px 5px #000000; /* Jednoduchý stín kolem textu */
-    margin-bottom: 0px;
+    font-size: 1.2rem;
+    margin: 6px; /* Original spacing restored */
+    font-weight: 400;
+    color: #e8f5e9; /* Lighter green for contrast */
 }
-header img {
-    height: 415px;
-    position: absolute;
-    transform: translateX(-50%);
-    z-index: 0; /* Zajistí, že obrázek bude za h1 */
-    background-size: cover;
-    /*background-image:url(/zuzka+pes2.jpg)*/
-    
+
+/* Image Section */
+.obrazek {
+    margin-top: 0px; /* Restore spacing below the header */
+    height: 400px;
+    background: url('/zuzka+pes2.jpg') center/cover no-repeat;
 }
+
+/* Navigation */
 nav {
-    background-color: #c8e6c9; /* Světle zelená */
-    color: white;
-    text-align: right;
-    padding: 0.5em 0;
+    background-color: #4caf50; /* Lighter green */
     display: flex;
-    justify-content: right;
-    flex-wrap: nowrap; /* Zabrání přetečení na další řádek */
+    flex-wrap: wrap; /* Allow wrapping on smaller screens */
+    justify-content: center; /* Center align links */
+    padding: 0.5rem;
 }
+
 nav a {
     color: white;
-    margin: 0 0.5em;
+    margin: 0 0.2rem; /* Reduced spacing for mobile */
     text-decoration: none;
-    padding: 4px;
-    outline: 2px solid #a5d6a7; /* Kulatá outline */
-    border-radius: 70px; /* Kulatý tvar */
-    background-color: rgb(133, 235, 133);
-    white-space: nowrap; /* Zabrání zalomení textu */
-    text-shadow: 1px 1px 3px #000000; /* Jednoduchý stín kolem textu */
+    padding: 0.4rem 0.6rem; /* Adjust padding for better fit */
+    border-radius: 20px;
+    font-size: 0.9rem; /* Smaller font for mobile compatibility */
+    transition: background-color 0.3s ease, transform 0.2s ease;
+    white-space: nowrap; /* Prevent breaking */
 }
-.vybrano {
-    background-color: rgb(85, 190, 71);
-}
-.container {
-    padding: 2em;
-}
-.tabulka1 {
-    max-width: 500px;
-    background-color: #ffffff;
-    padding: 5px;
-    padding-left: 10px;
-    padding-right: 10px;
-    margin-top: 10px;
-}
-.tabulka1 img{
-    max-width: 500px;
-    width: 100%;
-}
-.tabulka1 h3,.tabulka1 h2,.tabulka1 p,.tabulka1 a{
 
-    padding: 5px;
-    padding-left: 10px;
+nav a:hover {
+    background-color: #2e7d32; /* Darker green on hover */
+    transform: scale(1.05); /* Slight zoom effect */
 }
-.h1,h2{
-    color: rgb(123, 255, 123);
-    text-shadow: 1px 1px 2px black;
-    justify-content: center;
+
+nav .vybrano {
+    background-color: #2e7d32; /* Highlighted link */
+    font-weight: bold;
 }
-.tabulka2 {
-    margin-top: 20px;
-    background-color: #ffffff;
-    max-width: 500px;
+
+/* Main Content */
+.tabulka {
+    background-color: white;
+    max-width: 90%;
+    margin: 2rem auto;
+    padding: 2rem;
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Subtle shadow for depth */
+}
+
+.tabulka img {
+    width: 100%;
+    max-width: 500px; /* New limit for image width */
+    border-radius: 10px;
     display: block;
-    padding: 5px;
-    padding-left: 10px;
-    padding-right: 10px;
+    margin: 1rem auto; /* Center images */
 }
-.tabulka2 img{
-    max-width: 500px;
-    width: 100%;
-}
-.tabulka2 h3{
-    text-align: center;
-}
-.tabulka2 h3,.tabulka2 h2,.tabulka2 p{
-    background-color: #ffffff;
-    padding: 5px;
-    padding-left: 10px;
-}
-/*-----------otevirani-----------*/
-.expandable {
-    cursor: pointer;
-}
-.content {
-    max-height: 0;
-    overflow: hidden;
-    transition: max-height 0.5s ease-out;
-}
-.content p {
-    transform: translateY(-100%);
-    opacity: 0;
-    transition: transform 0.5s ease-out, opacity 0.5s ease-out;
-}
-.content.show {
-    max-height: 500px; /* Adjust this value based on your content's height */
-}
-.content.show p {
-    transform: translateX(0);
-    opacity: 1;
-}
-/*-----------šipka-----------*/
 
-.expandable {
+/* Typography */
+h2, h3 {
+    color: #2e7d32; /* Accent green */
+    margin-bottom: 1rem;
+}
+
+h3.expandable, h3.preklik {
     cursor: pointer;
     display: flex;
     align-items: center;
+    color: #388e3c; /* Slightly darker green for interactivity */
+    text-shadow: 1px 1px 3px #81c784; /* Soft shadow */
+    text-decoration: underline dotted;
 }
 
 .expandable .arrow {
-    transition: transform 0.3s;
     margin-right: 3px;
+    transition: transform 0.3s ease;
 }
 
 .expandable.active .arrow {
     transform: rotate(90deg);
 }
 
-
+.content {
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.5s ease-out;
+}
 
 .content.show {
-    max-height: 200px; /* Adjust this value based on your content's height */
-    transition: max-height 0.5s ease-in;
-}
-/*-----------konec-----------*/
-.eutanasie{
-    text-shadow: 0px 0px 0px;
-    color: black;
-}
-h4{
-    padding: 5px;
-    padding-left: 10px;
-}
-.preklik{
-    text-decoration: dotted underline;
-    color: rgb(86, 250, 86);
-    text-shadow: 1px 1px 3px black;
+    max-height: 500px; /* Revealed state */
 }
 
+/* Grid Layout */
 .grid-container {
     display: grid;
     grid-template-columns: 1fr 1fr;
-    gap: 20px; /* mezera mezi obrázky */
-    width: 380px; /* šířka čtverce */
-    height: 380px; /* výška čtverce */
-  }
-  .grid-container img {
+    gap: 20px;
+    max-width: 90%;
+    margin: auto;
+}
+
+.grid-container img {
     width: 100%;
-    height: 100%;
-    object-fit: cover; /* zajistí oříznutí a zachování proporcí */
-  }
+    max-width: 300px; /* New limit for grid images */
+    height: auto;
+    border-radius: 10px;
+    display: block;
+    margin: auto;
+}
+
+/* Footer */
+footer {
+    margin-top: 2rem;
+    padding: 1rem;
+    background-color: #388e3c;
+    color: white;
+    font-size: 0.9rem;
+    text-align: center;
+}
+
+/* Media Queries for Desktop */
+@media screen and (min-width: 1024px) {
+    body {
+        font-size: 1.1rem; /* Increase base font size */
+    }
+
+    nav a {
+        font-size: 1rem; /* Larger font for desktop */
+        margin: 0 0.5rem; /* More spacing between links */
+    }
+
+    .tabulka {
+        max-width: 70%; /* Wider content sections for desktop */
+    }
+
+    .tabulka img {
+        max-width: 400px; /* Adjusted max width for larger images */
+    }
+
+    .grid-container {
+        grid-template-columns: repeat(3, 1fr); /* 3 columns for desktop */
+    }
+
+    .grid-container img {
+        max-width: 250px; /* Further limit grid image size for desktop */
+    }
+
+    .obrazek {
+        height: 600px; /* Larger image for desktop */
+    }
+}

@@ -5,13 +5,15 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Služby - VetJede</title>
     <link rel="stylesheet" href="styles.css">
+    <script src="script.js" defer></script>
 </head>
 <body>
     <header>
-        <img src="zuzka+pes.jpg" alt="obrazek zahlavi">
         <h1>VetJede</h1>
         <h3>Veterinářka jede - až k Vám domů!</h3>
     </header>
+    <div class="obrazek">
+    </div>
     <nav>
         <a href="index.html">Domů</a>
         <a href="o-mne.html">O mně</a>
@@ -19,13 +21,15 @@
         <a href="kontakt.html">Kontakt</a>
         <a href="cenik.html">Ceník</a>
     </nav>
-    <div class="tabulka1">
+    <div class="tabulka">
         <p>Zajišťuji veterinární výjezdovou službu v oblasti Plzně, v rámci které ošetřuji psy a kočky v jejich domácím prostředí.</p>
         <h3 onclick="scrollToPrevence()" class="preklik">Veterinární preventivní medicína</h3>
         <h3 onclick="scrollToEuthanasia()" class="preklik">Eutanasie v domácím prostředí</h3>
         <h3 onclick="scrollToAparat()" class="preklik">Manuální ošetření pohybového aparátu</h3>
-        <h2>Služby</h2>
-        <h3 id="prevence">Prevence:</h3>
+        <h2 id="prevence">Služby</h2>
+    </div>
+    <div class="tabulka">
+        <h3>Prevence:</h3>
         <ul>
             <li>klinické vyšetření</li>
             <li>vakcinace psů, koček, drobných savců</li>
@@ -33,13 +37,16 @@
             <li>úprava drápků</li>
             <li>ošetření paranálních váčků</li>
         </ul>
-        <div class="grid-container">
-            <img src="pes_drapy2.jpg" alt="">
-            <img src="pes_injekce2.jpg" alt="Obrázek 2">
-            <img src="pes_stetoskop2.jpg" alt="Obrázek 3">
-            <img src="pes_zuby2.jpg" alt="Obrázek 4">
-        </div>
+    </div>
         
+    <div class="grid-container">
+        <img src="pes_drapy2.jpg" alt="">
+        <img src="pes_injekce2.jpg" alt="Obrázek 2">
+        <img src="pes_stetoskop2.jpg" alt="Obrázek 3">
+        <img src="pes_zuby2.jpg" alt="Obrázek 4">
+    </div>
+
+    <div class="tabulka">
         <h3>Administrativa:</h3>
         <ul>
             <li>čipování </li>
@@ -52,10 +59,14 @@
             <li>první očkování, čipování, vystavení pasu u chovatele</li>
             <li>první vyšetření a očkování v novém domově</li>
         </ul>
+    </div>
+    <div class="tabulka">
         <h3>Preventivní vyšetření krve </h3>
         <p>(zahrnuje odběr vzorku, transport do laboratoře a interpretaci výsledků)</p>
         <h3>Snap testy</h3>
         <p>(FeLV, FIV, onemocnění přenášená klíšťaty, Giardia)</p>
+    </div>
+    <div class="tabulka">
         <h3>Ošetření drobných poranění, nekomplikovaných ran, zánětu kůže</h3>
         <p></p>
         <h3>Ošetření uší</h3>
@@ -70,13 +81,15 @@
             <li>syndromu suchého oka</li>
             <li>speciální barvení a případné nasměrování k další diagnostice</li>
         </ul>
+    </div>
+    <div class="tabulka">
         <h3>Poradenství v oblasti výživy psů a koček</h3>
         <p></p>
         <h3>Zakoupení veterinárních diet, doplňků stravy</h3>
         <p></p>
         <h3>Aplikace léků:</h3>
         <p>Výživa kloubů Bonharen</p>
-        <h4>Zmírnění bolesti spojené s osteoartritidou:</h4>
+        <h4 id="euthanasia">Zmírnění bolesti spojené s osteoartritidou:</h4>
         <ul>
             <li>U psů. – Librela</li>
             <li>U koček – Solensia</li>
@@ -85,7 +98,9 @@
         <ul>
             <li>atopie u psů - Cytopoint</li>
         </ul>
-        <h2 id="euthanasia">EUTANASIE</h2>
+    </div>
+    <div class="tabulka">
+        <h2>EUTANASIE</h2>
         <p>Vlivem stárnutí či nemocí našich domácích mazlíčků se ke konci života může výrazně snižovat jeho kvalita. Učinit to nejtěžší rozhodnutí je tak pro majitele emočně velice náročné. Nalézt hranici mezi kvalitním životem a utrpením navíc může být pro majitele obtížné, proto mě telefonicky kontaktujte a společně vše probereme. </p>
         <p>Nabízím službu eutanasie doma, kdy se snažíme minimalizovat stres či bolest spojené s převozem zvířete do veterinární ordinace a následnou manipulací cizími osobami. Váš mazlíček tak může mít důstojný odchod, v soukromí, na místě, ve kterém celý život žil a kde se cítil bezpečně a milován, s milovanými osobami po svém boku.</p>
         <p>Ačkoliv je toto rozhodnutí nejtěžší v životě, vždy každému z vás říkám, že na něj pohlížíme jako na dar, který můžeme našemu milovanému zvířeti na konci jeho cesty dát, aby nezažil zbytečné utrpení, protože to si žádné zvíře nezaslouží.</p>
@@ -95,6 +110,8 @@
         <p>Se zvířetem se opatrně a v klidu seznámím. Sami rozhodnete, kde chcete, aby Váš mazlíček usínal. Zvíře se uvede do stavu sedace, následně jsou aplikovány vysoké dávky anestetik a zvíře pomalu usíná tak, jako je tomu při chystání na chirurgický zákrok. Ve stavu hluboké anestezie zvíře již nevnímá okolí a necítí žádnou bolest. Poté následuje poslední injekce, která zastavuje srdeční a dechovou činnost. </p>
         <h3>Jste rozhodnutí pro eutanasii doma?</h3>
         <a href="kontakt.html" >Objednejte si veterináře domů</a>
+    </div>
+    <div class="tabulka">
         <h2 id="aparat" >Manuální ošetření pohybového aparátu</h3>
         <p>Nabízím manuální ošetření pohybového aparátu psů - Dornova metoda, masáže, měkotkáňové techniky a kloubní mobilizace</p>
     </div>
