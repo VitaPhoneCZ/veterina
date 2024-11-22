@@ -1,15 +1,94 @@
+/* Import custom font */
 @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap');
 
 /* General Body Styles */
 body {
-    font-family: 'Roboto', sans-serif;
     margin: 0;
     padding: 0;
+    font-family: 'Roboto', sans-serif;
     background-color: #f4f8f5; /* Light green background */
     color: #333;
 }
 
-/* Header */
+/* Slideshow Styles */
+.slideshow-container {
+    width: 100%;
+    max-width: 600px;  /* Default size for larger screens */
+    margin: 50px auto;
+    overflow: hidden;
+    border: 2px solid #ddd;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    position: relative;
+    height: 350px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/* Media Query for smaller screens (phone use) */
+@media screen and (max-width: 768px) {
+    .slideshow-container {
+        max-width: 90%; /* Make it smaller on phones */
+        height: 250px; /* Adjust height for smaller screens */
+    }
+}
+
+/* Media Query for larger screens (desktop use) */
+@media screen and (min-width: 1024px) {
+    .slideshow-container {
+        max-width: 1024px; /* Increase max width for desktop */
+        height: 450px; /* Adjust height for larger screens */
+    }
+}
+
+/* Slideshow Styles (unchanged) */
+.slideshow {
+    display: flex;
+    transition: transform 0.5s ease-in-out;
+}
+
+.slideshow img {
+    width: 100%;
+    height: auto;
+    object-fit: contain;
+    flex-shrink: 0;
+    display: block;
+}
+
+.arrow {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    background-color: rgba(0, 0, 0, 0.5);
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    cursor: pointer;
+    border-radius: 50%;
+    font-size: 24px;
+    z-index: 10;
+    opacity: 0; /* Initially hidden */
+    transition: opacity 0.3s ease;
+}
+
+.slideshow-container:hover .arrow {
+    opacity: 1; /* Show arrows when hovering over the container */
+}
+
+.arrow.left {
+    left: 10px;
+}
+
+.arrow.right {
+    right: 10px;
+}
+
+.arrow:hover {
+    background-color: rgba(0, 0, 0, 0.8);
+}
+
+/* Header and Footer Styles */
 header, footer {
     background-color: #388e3c; /* Dark green */
     color: white;
@@ -37,10 +116,10 @@ header h3 {
 .obrazek {
     margin-top: 0px; /* Restore spacing below the header */
     height: 400px;
-    background: url('zuzka+pes2.jpg') center/cover no-repeat;
+    background: url('zuzka+pes3-min.jpg') center/cover no-repeat;
 }
 
-/* Navigation */
+/* Navigation Styles */
 nav {
     background-color: #4caf50; /* Lighter green */
     display: flex;
@@ -140,7 +219,7 @@ h3.expandable, h3.preklik {
     margin: auto;
 }
 
-/* Footer */
+/* Footer Styles */
 footer {
     margin-top: 2rem;
     padding: 1rem;
