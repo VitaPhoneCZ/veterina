@@ -23,10 +23,10 @@
     </nav>
     <div class="tabulka">
         <p>Zajišťuji veterinární výjezdovou službu v oblasti Plzně, v rámci které ošetřuji psy a kočky v jejich domácím prostředí.</p>
+        <h2>Služby</h2>
         <h3 onclick="scrollToPrevence()" class="preklik">Veterinární preventivní medicína</h3>
         <h3 onclick="scrollToEuthanasia()" class="preklik">Eutanasie v domácím prostředí</h3>
         <h3 onclick="scrollToAparat()" class="preklik">Manuální ošetření pohybového aparátu</h3>
-        <h2 id="prevence">Služby</h2>
     </div>
     <div class="tabulka">
         <h3>Prevence:</h3>
@@ -38,19 +38,18 @@
             <li>ošetření paranálních váčků</li>
         </ul>
     </div>
-        
     <div class="slideshow-container">
         <div class="slideshow">
-            <img src="/pes_drapy-min.jpg" loading="lazy" alt="Obrázek 1">
-            <img src="/pes_injekce-min.jpg" loading="lazy" alt="Obrázek 2">
-            <img src="/pes_stetoskop-min.jpg" loading="lazy" alt="Obrázek 3">
-            <img src="/pes_zuby-min.jpg" loading="lazy" alt="Obrázek 4">
-            <img src="/pes_injekce+zuzka-min.jpg" loading="lazy" alt="Obrázek 5">
-            <img src="/pes_zuby+zuzka-min.jpg" loading="lazy" alt="Obrázek 6">
-            <img src="/pes-min.jpg" loading="lazy" alt="Obrázek 7">
+            <img src="pes_drapy-min.jpg" loading="lazy" alt="Obrázek 1">
+            <img src="pes_injekce-min.jpg" loading="lazy" alt="Obrázek 2">
+            <img src="pes_stetoskop-min.jpg" loading="lazy" alt="Obrázek 3">
+            <img src="pes_zuby-min.jpg" loading="lazy" alt="Obrázek 4">
+            <img src="pes_injekce+zuzka-min.jpg" loading="lazy" alt="Obrázek 5">
+            <img src="pes_zuby+zuzka-min.jpg" loading="lazy" alt="Obrázek 6">
+            <img src="pes-min.jpg" loading="lazy" alt="Obrázek 7">
         </div>
         <button class="arrow left">&#10094;</button>
-        <button class="arrow right">&#10095;</button>
+        <button class="arrow right" id="prevence">&#10095;</button>
     </div>
 
     <div class="tabulka">
@@ -95,11 +94,11 @@
         <h3>Zakoupení veterinárních diet, doplňků stravy</h3>
         <p></p>
         <h3>Aplikace léků:</h3>
-        <p>Výživa kloubů Bonharen</p>
+        <p><strong>Výživa kloubů</strong> Bonharen</p>
         <h4 id="euthanasia">Zmírnění bolesti spojené s osteoartritidou:</h4>
         <ul>
-            <li>U psů. – Librela</li>
-            <li>U koček – Solensia</li>
+            <li>u psů – Librela</li>
+            <li>u koček – Solensia</li>
         </ul>
         <h4>Léčba klinických kožních projevů alergie</h4>
         <ul>
@@ -116,7 +115,9 @@
         <h3>Průběh eutanasie</h3>
         <p>Se zvířetem se opatrně a v klidu seznámím. Sami rozhodnete, kde chcete, aby Váš mazlíček usínal. Zvíře se uvede do stavu sedace, následně jsou aplikovány vysoké dávky anestetik a zvíře pomalu usíná tak, jako je tomu při chystání na chirurgický zákrok. Ve stavu hluboké anestezie zvíře již nevnímá okolí a necítí žádnou bolest. Poté následuje poslední injekce, která zastavuje srdeční a dechovou činnost. </p>
         <h3>Jste rozhodnutí pro eutanasii doma?</h3>
-        <a href="kontakt.html" >Objednejte si veterináře domů</a>
+        <a href="kontakt.html" class="call-link">
+            <i class="phone-icon">&#9742;</i> Objednejte si veterináře domů
+        </a>        
     </div>
     <div class="tabulka">
         <h2 id="aparat" >Manuální ošetření pohybového aparátu</h3>

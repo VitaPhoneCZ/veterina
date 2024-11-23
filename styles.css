@@ -178,7 +178,6 @@ h3.expandable, h3.preklik {
     display: flex;
     align-items: center;
     color: #388e3c; /* Slightly darker green for interactivity */
-    text-shadow: 1px 1px 3px #81c784; /* Soft shadow */
     text-decoration: underline dotted;
 }
 
@@ -198,7 +197,7 @@ h3.expandable, h3.preklik {
 }
 
 .content.show {
-    max-height: 500px; /* Revealed state */
+    max-height: 500px; /* Adjust as needed */
 }
 
 /* Grid Layout */
@@ -228,6 +227,29 @@ footer {
     font-size: 0.9rem;
     text-align: center;
 }
+
+.call-link {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #4CAF50; /* Zelená barva */
+    color: white;
+    padding: 10px 20px;
+    border-radius: 30px; /* Oválný rámeček */
+    text-decoration: none;
+    font-size: 16px;
+    font-weight: bold;
+}
+
+.call-link:hover {
+    background-color: #45a049; /* Tmavší zelená při najetí */
+}
+
+.phone-icon {
+    margin-right: 10px; /* Mezera mezi ikonou a textem */
+    font-size: 20px; /* Velikost ikony */
+}
+
 
 /* Media Queries for Desktop */
 @media screen and (min-width: 1024px) {
