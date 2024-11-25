@@ -10,7 +10,6 @@ body {
     color: #333;
 }
 
-/* Slideshow Styles */
 .slideshow-container {
     width: 100%;
     max-width: 600px;  /* Default size for larger screens */
@@ -20,17 +19,30 @@ body {
     border-radius: 10px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
     position: relative;
-    height: 350px;
+    aspect-ratio: 16 / 9; /* Maintain 16:9 aspect ratio */
     display: flex;
     justify-content: center;
     align-items: center;
+}
+
+.slideshow {
+    display: flex;
+    transition: transform 0.5s ease-in-out;
+    height: 100%; /* Take up full height of the container */
+}
+
+.slideshow img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover; /* Ensures images maintain aspect ratio and fill the frame */
+    flex-shrink: 0;
+    display: block;
 }
 
 /* Media Query for smaller screens (phone use) */
 @media screen and (max-width: 768px) {
     .slideshow-container {
         max-width: 90%; /* Make it smaller on phones */
-        height: 250px; /* Adjust height for smaller screens */
     }
 }
 
@@ -38,24 +50,11 @@ body {
 @media screen and (min-width: 1024px) {
     .slideshow-container {
         max-width: 1024px; /* Increase max width for desktop */
-        height: 450px; /* Adjust height for larger screens */
     }
 }
 
-/* Slideshow Styles (unchanged) */
-.slideshow {
-    display: flex;
-    transition: transform 0.5s ease-in-out;
-}
 
-.slideshow img {
-    width: 100%;
-    height: auto;
-    object-fit: contain;
-    flex-shrink: 0;
-    display: block;
-}
-
+/* Arrow styles */
 .arrow {
     position: absolute;
     top: 50%;
@@ -68,10 +67,11 @@ body {
     border-radius: 50%;
     font-size: 24px;
     z-index: 10;
-    opacity: 0; /* Initially hidden */
+    opacity: 0; /* Initially hidden on larger screens */
     transition: opacity 0.3s ease;
 }
 
+/* Show arrows on hover for larger screens */
 .slideshow-container:hover .arrow {
     opacity: 1; /* Show arrows when hovering over the container */
 }
@@ -87,6 +87,14 @@ body {
 .arrow:hover {
     background-color: rgba(0, 0, 0, 0.8);
 }
+
+/* Make arrows permanently visible on mobile screens */
+@media screen and (max-width: 768px) {
+    .arrow {
+        opacity: 1; /* Always visible */
+    }
+}
+
 
 /* Header and Footer Styles */
 header, footer {
@@ -228,26 +236,47 @@ footer {
     text-align: center;
 }
 
+.parent-container {
+    display: flex;
+    justify-content: center; /* Zarovná na střed horizontálně */
+    align-items: center; /* Zarovná na střed vertikálně */
+}
+
 .call-link {
     display: inline-flex;
     align-items: center;
     justify-content: center;
-    background-color: #4CAF50; /* Zelená barva */
+    background-color: #4CAF50;
     color: white;
     padding: 10px 20px;
-    border-radius: 30px; /* Oválný rámeček */
+    border-radius: 30px;
     text-decoration: none;
     font-size: 16px;
     font-weight: bold;
-}
-
-.call-link:hover {
-    background-color: #45a049; /* Tmavší zelená při najetí */
+    margin: 20px auto;
 }
 
 .phone-icon {
-    margin-right: 10px; /* Mezera mezi ikonou a textem */
-    font-size: 20px; /* Velikost ikony */
+    display: inline-block;
+    width: 20px;
+    height: 20px;
+    background-color: white;
+    -webkit-mask: url('phone-icon.svg') no-repeat center;
+    mask: url('phone-icon.svg') no-repeat center;
+    -webkit-mask-size: contain;
+    mask-size: contain;
+    margin-right: 10px;
+    padding-left: 10px;
+}
+.call-link i {
+    margin-right: 10px;
+    font-size: 20px;
+}
+
+
+
+.call-link:hover {
+    background-color: #45a049; /* Tmavší zelená při najetí */
 }
 
 
