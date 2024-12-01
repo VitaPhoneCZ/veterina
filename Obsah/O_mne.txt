@@ -1,0 +1,13 @@
+{
+    "hlavicka_nadpis": "VetJede",
+    "hlavicka_podnadpis": "Veterinářka jede - až k Vám domů!",
+    "title": "O mně - VetJede",
+    "menu_vybrane": "O mně",
+    "hlavni_nadpis": "O mně",
+    "jmeno": "MVDr. Bc. Zuzana Juřičková",
+    "odstavec_1": "Již od dětství jsem milovala zvířata a být veterinární lékařkou byl můj velký sen. Na 3 roky jsem však odbočila a vystudovala bakalářský obor Účetnictví a daně na Podnikatelské fakultě v Brně. Následně konečně začala cesta k vysněnému povolání, kterou jsem ukončila v roce 2021 promocí na Fakultě veterinárního lékařství VFU Brno.",
+    "odstavec_2": "Během celého studia jsem navštěvovala veterinární pracoviště se zaměřením na malá zvířata a drobné savce, velké díky patří veterinární klinice Primavet v Kroměříži za krásných 6 let zkušeností a také Veterinární ordinaci Zuzka.",
+    "odstavec_3": "Již v průběhu studia mě zaujala fyzioterapie a manuální techniky ošetření pohybového aparátu, absolvovala jsem kurzy Dornovy metody a Kloubních mobilizací.",
+    "odstavec_4": "Kromě práce veterinární lékařky jsem spolupracovalala na projektu veterinární ordinace v Praze v oblasti managementu a rozvoje.",
+    "paticka": "© 2024 Veterinářka Jede. Všechna práva vyhrazena."
+}

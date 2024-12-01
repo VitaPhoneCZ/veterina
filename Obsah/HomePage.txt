@@ -1,0 +1,13 @@
+{
+    "hlavicka_nadpis": "VetJede",
+    "hlavicka_podnadpis": "Veterinářka jede - až k Vám domů!",
+    "hlavni_nadpis": "Veterinární výjezdová služba",
+    "hlavni_paragraf": "Nabízím preventivní veterinární péči o Vaše domácí mazlíčky v pohodlí Vašeho domova.",
+    "vyhody": {
+        "Bez nutnosti přepravy": "Velmi vhodné pro ty, kdo se nemají například jak k veterináři dopravit, doprava s mazlíčkem by byla příliš komplikovaná nebo zvířátko není dostatečně zvyklé na cestování. Rádi tuto možnost využijí majitelé více zvířat, kdy doprava celé smečky do veterinární ordinace bývá komplikovaná, také majitelé koček, které jsou obecně velmi citlivé ke stresu spojeným s přepravou.",
+        "Minimalizace stresu zvířete": "Díky výjezdové službě až k Vám domů můžeme zvíře ošetřit/vyšetřit přímo v pohodlí domova. Odpadá stres spojený s přepravou, s časem stráveným v přeplněné čekárně ordinace a stres spojený s přítomností jiných zvířat či cizích osob. Omezení stresu je navíc velmi efektivní, jelikož zvířata mohou být ve větší psychické pohodě a vyšetření proběhne mnohdy i výrazně rychleji.",
+        "Vyšší bezpečnost": "Nedochází k rizikovému kontaktu s ostatními zvířaty, což je zvláště důležité u štěňat/koťat, mladých nebo naopak starých zvířat a nemocných zvířat. Omezí se tak možnost přenosu infekčních onemocnění na další zvířata.",
+        "Časová úspora": "Termín návštěvy předem společně dohodneme, přesně tak budete vědět datum a čas návštěvy a vyhnete se tak zbytečnému dlouhému čekání v ordinaci."
+    },
+    "paticka": "© 2024 Veterinářka Jede. Všechna práva vyhrazena."
+}
