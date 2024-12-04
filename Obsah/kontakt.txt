@@ -1,0 +1,8 @@
+{
+    "kontakt_nadpis": "Kontakt",
+    "kontakt_jmeno": "MVDr. Bc. Zuzana Juřičková",
+    "kontakt_telefon": "Telefon: +420 775 938 444",
+    "kontakt_email": "Email: jurickova.zu@seznam.cz",
+    "kontakt_pracovni_doba": "Pracovní doba: dle tel. domluvy (8:00-18:00), příplatek za víkend a státní svátky viz <a href=\"cenik.html\">ceník</a>",
+    "kontakt_lokalita": "Lokalita: Plzeň a okolí"
+}

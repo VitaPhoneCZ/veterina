@@ -30,7 +30,7 @@ $texty = json_decode(file_get_contents('Obsah/HomePage.txt'), true);
     <div class="tabulka">
         <h2><?= $texty['hlavni_nadpis'] ?></h2>
         <p><?= $texty['hlavni_paragraf'] ?></p>
-        <img src="zuzka2-min.jpg" alt="">
+        <img src="imgs/zuzka2-min.jpg" alt="">
     </div>
     <div class="tabulka">
         <h2>Výhody ošetření zvířete v domácím prostředí:</h2>
@@ -50,9 +50,9 @@ $texty = json_decode(file_get_contents('Obsah/HomePage.txt'), true);
         <h3>Drobní savci</h3>
         <img src="imgs/mali.png" alt="drobní savci">
     </div>
-    <paticka>
-        <p><?= $texty['paticka'] ?></p>
-    </paticka>
+    <footer>
+        <p><?= htmlspecialchars($texty['paticka']) ?></p>
+    </footer>
 </body>
 
 </html>

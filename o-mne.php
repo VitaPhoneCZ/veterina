@@ -33,7 +33,7 @@ $texty = json_decode(file_get_contents('Obsah/O_mne.txt'), true);
         <p><?= htmlspecialchars($texty['odstavec_2']) ?></p>
         <p><?= htmlspecialchars($texty['odstavec_3']) ?></p>
         <p><?= htmlspecialchars($texty['odstavec_4']) ?></p>
-        <img src="zuzka1-min.jpg" alt="">
+        <img src="imgs/zuzka1-min.jpg" alt="">
     </div>
     <footer>
         <p><?= htmlspecialchars($texty['paticka']) ?></p>
