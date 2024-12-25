@@ -175,6 +175,14 @@ nav .vybrano {
     margin: 1rem auto; /* Center images */
 }
 
+.psi-hotel-img {
+    width: 100%; /* Make the image take the entire width of the .tabulka */
+    max-width: none; /* Override any max-width settings */
+    border-radius: 10px; /* Maintain the border-radius */
+    display: block;
+    margin: 1rem auto; /* Center the image */
+}
+
 /* Typography */
 h2, h3 {
     color: #2e7d32; /* Accent green */

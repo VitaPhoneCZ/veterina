@@ -30,8 +30,18 @@ $texty = json_decode(file_get_contents('Obsah/kontakt.txt'), true);
         <p><?= htmlspecialchars($texty['kontakt_jmeno']) ?></p>
         <p><?= htmlspecialchars($texty['kontakt_telefon']) ?></p>
         <p><?= htmlspecialchars($texty['kontakt_email']) ?></p>
-        <p><?= htmlspecialchars($texty['kontakt_pracovni_doba']) ?></p>
+        <p>
+            <?= htmlspecialchars($texty['kontakt_pracovni_doba']) ?> 
+            <a href="cenik.php">ceník</a>
+        </p>
         <p><?= htmlspecialchars($texty['kontakt_lokalita']) ?></p>
+    </div>
+    <div class="tabulka">
+        <h2><?= htmlspecialchars($texty['spoluprace_nadpis']) ?></h2>
+        <p><?= htmlspecialchars($texty['spoluprace_nazev']) ?></p>
+        <img src="imgs/psi-hotel.jpg" alt="Psí hotel Kuky" class="psi-hotel-img">
+        <p><?= htmlspecialchars($texty['spoluprace_popis']) ?></p>
+        <a href="<?= htmlspecialchars($texty['spoluprace_odkaz']) ?>" target="_blank">Navštivte web</a>
     </div>
     <footer>
         <p>© 2024 Veterinářka Jede. Všechna práva vyhrazena.</p>

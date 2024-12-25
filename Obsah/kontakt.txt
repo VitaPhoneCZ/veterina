@@ -3,6 +3,10 @@
     "kontakt_jmeno": "MVDr. Bc. Zuzana Juřičková",
     "kontakt_telefon": "Telefon: +420 775 938 444",
     "kontakt_email": "Email: jurickova.zu@seznam.cz",
-    "kontakt_pracovni_doba": "Pracovní doba: dle tel. domluvy (8:00-18:00), příplatek za víkend a státní svátky viz <a href=\"cenik.html\">ceník</a>",
-    "kontakt_lokalita": "Lokalita: Plzeň a okolí"
+    "kontakt_pracovni_doba": "Pracovní doba: dle tel. domluvy (8:00-18:00), příplatek za víkend a státní svátky viz ",
+    "kontakt_lokalita": "Lokalita: Plzeň a okolí",
+    "spoluprace_nadpis": "Spolupráce",
+    "spoluprace_nazev": "Psí hotel Kuky",
+    "spoluprace_popis": "Psí hotel v domácím prostředí, bez zaměstnanců, s dohledem pouze majitelky 24/7.",
+    "spoluprace_odkaz": "https://psi-hotel-kuky.webnode.cz/?utm_source=firmy.cz&utm_medium=ppd&utm_campaign=firmy.cz-13347335"
 }
