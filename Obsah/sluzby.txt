@@ -56,6 +56,6 @@
     "euthanasia_rozhodnuti_doma": "Jste rozhodnutí pro eutanasii doma?",
     "kontakt_odkaz": "Objednejte si veterináře domů",
     "aparat_nadpis": "Manuální ošetření pohybového aparátu",
-    "aparat_popis": "Nabízím manuální ošetření pohybového aparátu psů - Dornova metoda, masáže, měkotkáňové techniky a kloubní mobilizace",
+    "aparat_popis": "Nabízím manuální ošetření pohybového aparátu psů - Dornova metoda, masáže, měkotkáňové techniky a kloubní mobilizace.",
     "paticka": "© 2024 Veterinářka Jede. Všechna práva vyhrazena."
 }

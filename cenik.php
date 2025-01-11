@@ -72,7 +72,6 @@ $texty = json_decode(file_get_contents('Obsah/cenik.txt'), true);
     </div>
 
     <div class="tabulka">
-        <p><?= htmlspecialchars($texty['cipovani_nadpis']) ?></p>
         <p><?= htmlspecialchars($texty['cipovani_popis']) ?></p>
         <p><?= htmlspecialchars($texty['ockovaci_prukaz']) ?></p>
         <p><?= htmlspecialchars($texty['petpas']) ?></p>

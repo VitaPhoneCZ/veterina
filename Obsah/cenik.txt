@@ -2,7 +2,7 @@
     "cenik_nadpis": "Ceník",
     "cestovne": "Cestovné 15 Kč/km",
     "ceny_uvod": "K ceně se dále připočítávají provedené úkony, služby a příplatky.",
-    "priplatek_za_vikendy": "Příplatek za víkendy a státní svátky: 800,-",
+    "priplatek_za_vikendy": "Příplatek za víkendy a státní svátky: 500,-",
     "vakcinace_pes_nadpis": "Vakcinace pes",
     "vakcinace_pes_cena": "600,- kompletní vakcinace (pětikombinace infekčních onemocnění + vzteklina)",
     "vakcinace_pes_polozky": [
@@ -24,8 +24,7 @@
     "vakcinace_fretka_nadpis": "Vakcinace fretka",
     "vakcinace_fretka_polozky": [
         "vzteklina 300,-"
-    ],
-    "cipovani_nadpis": "Čipování",
+    ]
     "cipovani_popis": "Čipování (čip, aplikace, administrativa) - od 600,- (v závislosti na typu aplikovaného čipu)",
     "ockovaci_prukaz": "Vystavení očkovacího průkazu 50,-",
     "petpas": "Vystavení a registrace petpasu 500,-",
@@ -34,12 +33,12 @@
     "osetreni_drapu_nadpis": "Ošetření drápů",
     "osetreni_drapu_polozky": [
         "s očkováním – 100,-",
-        "Pouze drápy – 150,-"
+        "pouze drápy – 150,-"
     ],
     "osetreni_analych_zlazek_nadpis": "Ošetření análních žlázek",
     "osetreni_analych_zlazek_polozky": [
         "s očkováním – 100,-",
-        "Pouze žlázky – 150,-"
+        "pouze žlázky – 150,-"
     ],
     "cisteni_usi": "Čištění uší (dle rozsahu) od 200,-",
     "osetreni_poraneni": "Ošetření drobných poranění od 300,-",
