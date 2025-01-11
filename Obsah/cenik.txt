@@ -24,7 +24,7 @@
     "vakcinace_fretka_nadpis": "Vakcinace fretka",
     "vakcinace_fretka_polozky": [
         "vzteklina 300,-"
-    ]
+    ],
     "cipovani_popis": "Čipování (čip, aplikace, administrativa) - od 600,- (v závislosti na typu aplikovaného čipu)",
     "ockovaci_prukaz": "Vystavení očkovacího průkazu 50,-",
     "petpas": "Vystavení a registrace petpasu 500,-",
