@@ -26,15 +26,22 @@ $texty = json_decode(file_get_contents('Obsah/O_mne.txt'), true);
         <a href="kontakt.php">Kontakt</a>
         <a href="cenik.php">Ceník</a>
     </nav>
-    <div class="tabulka">
-        <h2><?= htmlspecialchars($texty['hlavni_nadpis']) ?></h2>
-        <h3><?= htmlspecialchars($texty['jmeno']) ?></h3>
-        <p><?= htmlspecialchars($texty['odstavec_1']) ?></p>
-        <p><?= htmlspecialchars($texty['odstavec_2']) ?></p>
-        <p><?= htmlspecialchars($texty['odstavec_3']) ?></p>
-        <p><?= htmlspecialchars($texty['odstavec_4']) ?></p>
-        <img src="imgs/zuzka1-min.jpg" alt="">
+    <div class="tabulka-obrazek">
+        <div class="tabulka-left">
+            <h2><?= htmlspecialchars($texty['hlavni_nadpis']) ?></h2>
+            <h3><?= htmlspecialchars($texty['jmeno']) ?></h3>
+            <p><?= htmlspecialchars($texty['odstavec_1']) ?></p>
+            <p><?= htmlspecialchars($texty['odstavec_2']) ?></p>
+            <p><?= htmlspecialchars($texty['odstavec_3']) ?></p>
+            <p><?= htmlspecialchars($texty['odstavec_4']) ?></p>
+        </div>
+        <div class="tabulka-right">
+            <img src="imgs/zuzka1-min.jpg" alt="">
+        </div>
     </div>
+
+</div>
+
     <footer>
         <p><?= htmlspecialchars($texty['paticka']) ?></p>
     </footer>

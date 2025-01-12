@@ -35,20 +35,28 @@ $texty = json_decode(file_get_contents('Obsah/HomePage.txt'), true);
     <div class="tabulka">
         <h2>Výhody ošetření zvířete v domácím prostředí:</h2>
         <?php foreach ($texty['vyhody'] as $title => $content): ?>
-            <h3 class="expandable">🢂<?= $title ?></h3>
+            <h3 class="expandable">➔ <?= $title ?></h3>
             <div class="content">
                 <p><?= $content ?></p>
             </div>
         <?php endforeach; ?>
     </div>
-    <div class="tabulka">
+    <div class="tabulka-obrazek">
         <h2>Jaká zvířata ošetřuji?</h2>
-        <h3>Psi</h3>
-        <img src="imgs/pes.png" alt="pes">
-        <h3>Kočky</h3>
-        <img src="imgs/kocka.png" alt="kočka">
-        <h3>Drobní savci</h3>
-        <img src="imgs/mali.png" alt="drobní savci">
+        <div class="tabulka-obrazek">
+            <div>
+                <h3>Psi</h3>
+                <img src="imgs/pes.png" alt="pes">
+            </div>
+            <div>
+                <h3>Kočky</h3>
+                <img src="imgs/kocka.png" alt="kočka">
+            </div>
+            <div>
+                <h3>Drobní savci</h3>
+                <img src="imgs/mali.png" alt="drobní savci">
+            </div>
+        </div>
     </div>
     <footer>
         <p><?= htmlspecialchars($texty['paticka']) ?></p>

@@ -4,6 +4,7 @@ $texty = json_decode(file_get_contents('Obsah/sluzby.txt'), true);
 
 <!DOCTYPE html>
 <html lang="cs">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -11,6 +12,7 @@ $texty = json_decode(file_get_contents('Obsah/sluzby.txt'), true);
     <link rel="stylesheet" href="styles.css">
     <script src="script.js" defer></script>
 </head>
+
 <body>
     <header>
         <h1><?= htmlspecialchars($texty['hlavicka_nadpis']) ?></h1>
@@ -75,54 +77,56 @@ $texty = json_decode(file_get_contents('Obsah/sluzby.txt'), true);
         <p><?= htmlspecialchars($texty['snap_testy']) ?></p>
     </div>
     <div class="tabulka">
-    <h3><?= htmlspecialchars($texty['osetreni_poraneni_nadpis']) ?></h3>
-    <p></p>
-    <h3><?= htmlspecialchars($texty['osetreni_usi_nadpis']) ?></h3>
-    <p></p>
-    <h3><?= htmlspecialchars($texty['chirurgicke_ukony_nadpis']) ?></h3>
-    <p></p>
-    <h3><?= htmlspecialchars($texty['ocni_vysetreni_nadpis']) ?></h3>
-    <p><?= htmlspecialchars($texty['ocni_vysetreni_popis']) ?></p>
-    <ul>
-        <?php foreach ($texty['ocni_vysetreni_polozky'] as $polozka): ?>
-            <li><?= htmlspecialchars($polozka) ?></li>
-        <?php endforeach; ?>
-    </ul>
+        <h3><?= htmlspecialchars($texty['osetreni_poraneni_nadpis']) ?></h3>
+        <p></p>
+        <h3><?= htmlspecialchars($texty['osetreni_usi_nadpis']) ?></h3>
+        <p></p>
+        <h3><?= htmlspecialchars($texty['chirurgicke_ukony_nadpis']) ?></h3>
+        <p></p>
+        <h3><?= htmlspecialchars($texty['ocni_vysetreni_nadpis']) ?></h3>
+        <p><?= htmlspecialchars($texty['ocni_vysetreni_popis']) ?></p>
+        <ul>
+            <?php foreach ($texty['ocni_vysetreni_polozky'] as $polozka): ?>
+                <li><?= htmlspecialchars($polozka) ?></li>
+            <?php endforeach; ?>
+        </ul>
     </div>
     <div class="tabulka">
-    <h3><?= htmlspecialchars($texty['poradenstvi_vyziva_psu_a_kocka']) ?></h3>
-    <p></p>
-    <h3><?= htmlspecialchars($texty['zakoupeni_veterinarni_diety']) ?></h3>
-    <p></p>
-    <h3><?= htmlspecialchars($texty['aplikace_leku_nadpis']) ?></h3>
-    <p><strong><?= htmlspecialchars($texty['vyziva_kloubu']) ?></strong></p>
-    <h4 id="euthanasia"><?= htmlspecialchars($texty['osteopartritida_nadpis']) ?></h4>
-    <ul>
-        <li><?= htmlspecialchars($texty['osteopartritida_psi']) ?></li>
-        <li><?= htmlspecialchars($texty['osteopartritida_kocky']) ?></li>
-    </ul>
-    <h4><?= htmlspecialchars($texty['lecba_kozni_alergie_nadpis']) ?></h4>
-    <ul>
-        <li><?= htmlspecialchars($texty['atopie_u_psu']) ?></li>
-    </ul>
+        <h3><?= htmlspecialchars($texty['poradenstvi_vyziva_psu_a_kocka']) ?></h3>
+        <p></p>
+        <h3><?= htmlspecialchars($texty['zakoupeni_veterinarni_diety']) ?></h3>
+        <p></p>
+        <h3><?= htmlspecialchars($texty['aplikace_leku_nadpis']) ?></h3>
+        <p><strong><?= htmlspecialchars($texty['vyziva_kloubu']) ?></strong></p>
+        <h4 id="euthanasia"><?= htmlspecialchars($texty['osteopartritida_nadpis']) ?></h4>
+        <ul>
+            <li><?= htmlspecialchars($texty['osteopartritida_psi']) ?></li>
+            <li><?= htmlspecialchars($texty['osteopartritida_kocky']) ?></li>
+        </ul>
+        <h4><?= htmlspecialchars($texty['lecba_kozni_alergie_nadpis']) ?></h4>
+        <ul>
+            <li><?= htmlspecialchars($texty['atopie_u_psu']) ?></li>
+        </ul>
     </div>
     <div class="tabulka">
-    <h2><?= htmlspecialchars($texty['euthanasia_nadpis']) ?></h2>
-    <p><?= htmlspecialchars($texty['euthanasia_popis']) ?></p>
-    <p><?= htmlspecialchars($texty['euthanasia_sluha_popis']) ?></p>
-    <p><?= htmlspecialchars($texty['euthanasia_rozhodnuti']) ?></p>
-    <h3><?= htmlspecialchars($texty['euthanasia_pred_prijezdem_nadpis']) ?></h3>
-    <p><?= htmlspecialchars($texty['euthanasia_pred_prijezdem']) ?></p>
-    <h3><?= htmlspecialchars($texty['euthanasia_prubeh_nadpis']) ?></h3>
-    <p><?= htmlspecialchars($texty['euthanasia_prubeh']) ?></p>
-    <h3><?= htmlspecialchars($texty['euthanasia_rozhodnuti_doma']) ?></h3>
-    <div class="parent-container">
-        <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" rel="stylesheet">
-        <a href="kontakt.php" class="call-link">
-            <i class="fas fa-phone"></i> <?= htmlspecialchars($texty['kontakt_odkaz']) ?>
-        </a>
+        <img src="imgs/packa-min.jpg" alt="packa">
+        <h2><?= htmlspecialchars($texty['euthanasia_nadpis']) ?></h2>
+        <p><?= htmlspecialchars($texty['euthanasia_popis']) ?></p>
+        <p><?= htmlspecialchars($texty['euthanasia_sluha_popis']) ?></p>
+        <p><?= htmlspecialchars($texty['euthanasia_rozhodnuti']) ?></p>
+        <h3><?= htmlspecialchars($texty['euthanasia_pred_prijezdem_nadpis']) ?></h3>
+        <p><?= htmlspecialchars($texty['euthanasia_pred_prijezdem']) ?></p>
+        <h3><?= htmlspecialchars($texty['euthanasia_prubeh_nadpis']) ?></h3>
+        <p><?= htmlspecialchars($texty['euthanasia_prubeh']) ?></p>
+        <h3 style="text-align: center;"><?= htmlspecialchars($texty['euthanasia_rozhodnuti_doma']) ?></h3>
+        <div class="parent-container">
+            <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" rel="stylesheet">
+            <a href="kontakt.php" class="call-link">
+                <i class="fas fa-phone"></i> <?= htmlspecialchars($texty['kontakt_odkaz']) ?>
+            </a>
+        </div>
     </div>
-</div>
+    </div>
 
     <div class="tabulka">
         <h2 id="aparat"><?= htmlspecialchars($texty['aparat_nadpis']) ?></h2>
@@ -132,4 +136,5 @@ $texty = json_decode(file_get_contents('Obsah/sluzby.txt'), true);
         <p><?= htmlspecialchars($texty['paticka']) ?></p>
     </footer>
 </body>
+
 </html>
