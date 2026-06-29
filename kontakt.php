@@ -10,10 +10,11 @@ $texty = json_decode(file_get_contents('Obsah/kontakt.txt'), true);
     <title><?= htmlspecialchars($texty['kontakt_nadpis']) ?> - VetJede</title>
     <link rel="stylesheet" href="styles.css">
     <script src="script.js" defer></script>
+    <link rel="icon" type="image/png" href="imgs/horni_obrazek.png">
 </head>
 <body>
     <header>
-        <h1>VetJede</h1>
+        <h1>VetJede - MVDr.  Zuzana Juřičková</h1>
         <h3>Veterinářka jede - až k Vám domů!</h3>
     </header>
     <div class="obrazek">

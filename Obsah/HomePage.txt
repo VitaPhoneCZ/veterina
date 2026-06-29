@@ -1,5 +1,5 @@
 {
-    "hlavicka_nadpis": "VetJede",
+    "hlavicka_nadpis": "VetJede - MVDr.  Zuzana Juřičková",
     "hlavicka_podnadpis": "Veterinářka jede - až k Vám domů!",
     "hlavni_nadpis": "Veterinární výjezdová služba",
     "hlavni_paragraf": "Nabízím preventivní veterinární péči o Vaše domácí mazlíčky v pohodlí Vašeho domova.",

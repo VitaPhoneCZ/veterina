@@ -1,5 +1,4 @@
 <?php
-// Načtení textového obsahu z externího JSON souboru
 $texty = json_decode(file_get_contents('Obsah/O_mne.txt'), true);
 ?>
 <!DOCTYPE html>
@@ -11,6 +10,7 @@ $texty = json_decode(file_get_contents('Obsah/O_mne.txt'), true);
     <title><?= htmlspecialchars($texty['title']) ?></title>
     <link rel="stylesheet" href="styles.css">
     <script src="script.js" defer></script>
+    <link rel="icon" type="image/png" href="imgs/horni_obrazek.png">
 </head>
 
 <body>

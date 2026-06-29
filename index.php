@@ -1,5 +1,4 @@
 <?php
-// Načtení textů z externího JSON souboru
 $texty = json_decode(file_get_contents('Obsah/HomePage.txt'), true);
 ?>
 <!DOCTYPE html>
@@ -11,6 +10,7 @@ $texty = json_decode(file_get_contents('Obsah/HomePage.txt'), true);
     <title><?= $texty['hlavicka_nadpis'] ?></title>
     <link rel="stylesheet" href="styles.css">
     <script src="scriptindex.js" defer></script>
+    <link rel="icon" type="image/png" href="imgs/horni_obrazek.png">
 </head>
 
 <body>

@@ -11,6 +11,7 @@ $texty = json_decode(file_get_contents('Obsah/sluzby.txt'), true);
     <title><?= htmlspecialchars($texty['hlavicka_title']) ?></title>
     <link rel="stylesheet" href="styles.css">
     <script src="script.js" defer></script>
+    <link rel="icon" type="image/png" href="imgs/horni_obrazek.png">
 </head>
 
 <body>
@@ -97,16 +98,6 @@ $texty = json_decode(file_get_contents('Obsah/sluzby.txt'), true);
         <h3><?= htmlspecialchars($texty['zakoupeni_veterinarni_diety']) ?></h3>
         <p></p>
         <h3><?= htmlspecialchars($texty['aplikace_leku_nadpis']) ?></h3>
-        <p><strong><?= htmlspecialchars($texty['vyziva_kloubu']) ?></strong></p>
-        <h4 id="euthanasia"><?= htmlspecialchars($texty['osteopartritida_nadpis']) ?></h4>
-        <ul>
-            <li><?= htmlspecialchars($texty['osteopartritida_psi']) ?></li>
-            <li><?= htmlspecialchars($texty['osteopartritida_kocky']) ?></li>
-        </ul>
-        <h4><?= htmlspecialchars($texty['lecba_kozni_alergie_nadpis']) ?></h4>
-        <ul>
-            <li><?= htmlspecialchars($texty['atopie_u_psu']) ?></li>
-        </ul>
     </div>
     <div class="tabulka">
         <img src="imgs/packa-min.jpg" alt="packa">
