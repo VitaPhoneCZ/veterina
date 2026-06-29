@@ -64,6 +64,7 @@ $texty = json_decode(file_get_contents('Obsah/sluzby.txt'), true);
             <li><?= htmlspecialchars($texty['administrativa_ockovaci_prukaz']) ?></li>
             <li><?= htmlspecialchars($texty['administrativa_europas']) ?></li>
             <li><?= htmlspecialchars($texty['administrativa_veterinarni_potvrzeni']) ?></li>
+            <li><?= htmlspecialchars($texty['administrativa_cep']) ?></li>
         </ul>
         <h3><?= htmlspecialchars($texty['stene_kote']) ?></h3>
         <ul>
@@ -84,13 +85,6 @@ $texty = json_decode(file_get_contents('Obsah/sluzby.txt'), true);
         <p></p>
         <h3><?= htmlspecialchars($texty['chirurgicke_ukony_nadpis']) ?></h3>
         <p></p>
-        <h3><?= htmlspecialchars($texty['ocni_vysetreni_nadpis']) ?></h3>
-        <p><?= htmlspecialchars($texty['ocni_vysetreni_popis']) ?></p>
-        <ul>
-            <?php foreach ($texty['ocni_vysetreni_polozky'] as $polozka): ?>
-                <li><?= htmlspecialchars($polozka) ?></li>
-            <?php endforeach; ?>
-        </ul>
     </div>
     <div class="tabulka">
         <h3><?= htmlspecialchars($texty['poradenstvi_vyziva_psu_a_kocka']) ?></h3>

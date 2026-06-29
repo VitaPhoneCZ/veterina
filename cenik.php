@@ -4,6 +4,7 @@ $texty = json_decode(file_get_contents('Obsah/cenik.txt'), true);
 
 <!DOCTYPE html>
 <html lang="cs">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -15,7 +16,7 @@ $texty = json_decode(file_get_contents('Obsah/cenik.txt'), true);
 
 <body>
     <header>
-        <h1>VetJede - MVDr.  Zuzana Juřičková</h1>
+        <h1>VetJede - MVDr. Zuzana Juřičková</h1>
         <h3>Veterinářka jede - až k Vám domů!</h3>
     </header>
     <div class="obrazek">
@@ -32,9 +33,10 @@ $texty = json_decode(file_get_contents('Obsah/cenik.txt'), true);
         <h2><?= htmlspecialchars($texty['cenik_nadpis']) ?></h2>
         <p><?= htmlspecialchars($texty['cestovne']) ?></p>
         <p><?= htmlspecialchars($texty['ceny_uvod']) ?></p>
+        <p><strong><?= htmlspecialchars($texty['minimalni_cena_navstevy']) ?></strong></p>
         <p><?= htmlspecialchars($texty['priplatek_za_vikendy']) ?></p>
     </div>
-    
+
     <div class="tabulka">
         <h3><?= htmlspecialchars($texty['vakcinace_pes_nadpis']) ?></h3>
         <p><?= htmlspecialchars($texty['vakcinace_pes_cena']) ?></p>
@@ -73,29 +75,22 @@ $texty = json_decode(file_get_contents('Obsah/cenik.txt'), true);
     </div>
 
     <div class="tabulka">
-        <p><?= htmlspecialchars($texty['cipovani_popis']) ?></p>
-        <p><?= htmlspecialchars($texty['ockovaci_prukaz']) ?></p>
-        <p><?= htmlspecialchars($texty['petpas']) ?></p>
+        <p><strong><?= htmlspecialchars($texty['cipovani_nazev']) ?></strong> -
+            <?= htmlspecialchars($texty['cipovani_cena']) ?></p>
+        <p><strong><?= htmlspecialchars($texty['ockovaci_prukaz_nazev']) ?></strong> -
+            <?= htmlspecialchars($texty['ockovaci_prukaz_cena']) ?></p>
+        <p><strong><?= htmlspecialchars($texty['petpas_nazev']) ?></strong> -
+            <?= htmlspecialchars($texty['petpas_cena']) ?></p>
+        <p><strong><?= htmlspecialchars($texty['cep_nazev']) ?></strong> - <?= htmlspecialchars($texty['cep_cena']) ?>
+        </p>
     </div>
 
     <div class="tabulka">
         <p><?= htmlspecialchars($texty['klinicke_vysetreni']) ?></p>
-        <p><?= htmlspecialchars($texty['ocni_vysetreni']) ?></p>
-        <h4><?= htmlspecialchars($texty['osetreni_drapu_nadpis']) ?></h4>
-        <ul>
-            <?php foreach ($texty['osetreni_drapu_polozky'] as $polozka): ?>
-                <li><?= htmlspecialchars($polozka) ?></li>
-            <?php endforeach; ?>
-        </ul>
-        <h4><?= htmlspecialchars($texty['osetreni_analych_zlazek_nadpis']) ?></h4>
-        <ul>
-            <?php foreach ($texty['osetreni_analych_zlazek_polozky'] as $polozka): ?>
-                <li><?= htmlspecialchars($polozka) ?></li>
-            <?php endforeach; ?>
-        </ul>
-        <h4>Čištění uší</h4>
+        <p><?= htmlspecialchars($texty['vysetreni_krve']) ?></p>
+        <p><?= htmlspecialchars($texty['osetreni_drapu']) ?></p>
+        <p><?= htmlspecialchars($texty['osetreni_analych_zlazek']) ?></p>
         <p><?= htmlspecialchars($texty['cisteni_usi']) ?></p>
-        <h4>Ošetření drobných poranění</h4>
         <p><?= htmlspecialchars($texty['osetreni_poraneni']) ?></p>
     </div>
 
@@ -123,4 +118,5 @@ $texty = json_decode(file_get_contents('Obsah/cenik.txt'), true);
         <p>© 2024 Veterinářka Jede. Všechna práva vyhrazena.</p>
     </footer>
 </body>
+
 </html>

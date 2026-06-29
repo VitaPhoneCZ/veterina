@@ -1,7 +1,8 @@
 {
     "cenik_nadpis": "Ceník",
-    "cestovne": "Cestovné 15 Kč/km",
+    "cestovne": "Cestovné 15 Kč/km (výjezd z Malesic)",
     "ceny_uvod": "K ceně se dále připočítávají provedené úkony, služby a příplatky.",
+    "minimalni_cena_navstevy": "Minimální cena návštěvy je 400,- + cestovné.",
     "priplatek_za_vikendy": "Příplatek za víkendy a státní svátky: 500,-",
     "vakcinace_pes_nadpis": "Vakcinace pes",
     "vakcinace_pes_cena": "600,- kompletní vakcinace (pětikombinace infekčních onemocnění + vzteklina)",
@@ -25,25 +26,22 @@
     "vakcinace_fretka_polozky": [
         "vzteklina 300,-"
     ],
-    "cipovani_popis": "Čipování (čip, aplikace, administrativa) - od 600,- (v závislosti na typu aplikovaného čipu)",
-    "ockovaci_prukaz": "Vystavení očkovacího průkazu 50,-",
-    "petpas": "Vystavení a registrace petpasu 500,-",
-    "klinicke_vysetreni": "Klinické vyšetření 300,-",
-    "ocni_vysetreni": "Základní vyšetření očí 300,-",
-    "osetreni_drapu_nadpis": "Ošetření drápů",
-    "osetreni_drapu_polozky": [
-        "s očkováním – 100,-",
-        "pouze drápy – 150,-"
-    ],
-    "osetreni_analych_zlazek_nadpis": "Ošetření análních žlázek",
-    "osetreni_analych_zlazek_polozky": [
-        "s očkováním – 100,-",
-        "pouze žlázky – 150,-"
-    ],
-    "cisteni_usi": "Čištění uší (dle rozsahu) od 200,-",
-    "osetreni_poraneni": "Ošetření drobných poranění od 300,-",
+    "cipovani_nazev": "Čipování (čip, aplikace, administrativa)",
+    "cipovani_cena": "od 600,- (v závislosti na typu aplikovaného čipu)",
+    "ockovaci_prukaz_nazev": "Vystavení očkovacího průkazu",
+    "ockovaci_prukaz_cena": "50,-",
+    "petpas_nazev": "Vystavení a registrace petpasu",
+    "petpas_cena": "500,-",
+    "cep_nazev": "Registrace do CEP (Centrální evidence psů)",
+    "cep_cena": "od 1.7.2026",
+    "klinicke_vysetreni": "Klinické vyšetření - 300,-",
+    "vysetreni_krve": "Vyšetření krve - od 1000,-",
+    "osetreni_drapu": "Ošetření drápů - 150,-",
+    "osetreni_analych_zlazek": "Ošetření análních žlázek - 150,-",
+    "cisteni_usi": "Čištění uší (dle rozsahu) - od 200,-",
+    "osetreni_poraneni": "Ošetření drobných poranění - od 300,-",
     "eutanasie_nadpis": "Eutanasie doma",
-    "eutanasie_cena": "500,- úkon + anestetika 80,- kč/kg váhy zvířete",
+    "eutanasie_cena": "od 1400,- (dle množství použitých léčiv)",
     "antiparazitika_nadpis": "Ceník vybraných antiparazitik, ostatní na dotaz",
     "odcervovaci_tableta": "Odčervovací tableta 40,- (1 ks/10 kg)",
     "antiparazitika_polozky": [
